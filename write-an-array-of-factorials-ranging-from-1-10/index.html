@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>fibonacci series question</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  fibonacci Series from 1-10
+
+</body>
+<script>
+  const num = parseInt(prompt('enter the length of number to be in fibonacci series: '))
+  let n1 = 0, n2 = 1, next;
+  // let array = []
+  for (let i = 0; i <= num; i++) {
+    // array.push(n1)
+    console.log(n1)
+    next = n1 + n2;
+    n1 = n2
+    n2 = next
+  }
+  // console.log(array)
+</script>
+
+</html>
