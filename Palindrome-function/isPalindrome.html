@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if string is palndrome</title>
+</head>
+
+<body>
+    <h1>Check if a string is a palindrome word.</h1>
+</body>
+<script>
+    const isPalindrome = (text) => {
+        let firstLetter = 0, lastLetter = text.length - 1;
+        while (firstLetter < lastLetter) {
+            if (text[firstLetter] !== text[lastLetter]) {
+                return false
+            }
+            return true
+        }
+    }
+    const input = prompt("enter the word to check: ")
+    console.log(isPalindrome(input))
+</script>
+
+</html>
