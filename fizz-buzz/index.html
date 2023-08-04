@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizz-buzz</title>
+</head>
+<body>
+    <h1>Fizz-buzz </h1>
+    <p>Write a function that prints the numbers from 1 to n, but for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."</p>
+    <p>you can find the answer in console</p>
+</body>
+<script>
+    let n = 100;
+    function fizzBuzz(x,y){
+        // let z = x*y;
+        for(let i = 0; i<=n;i++){
+             if (i % x === 0 && i % y=== 0){
+                console.log('fizzbuzz');
+            }
+            else if(i % x === 0){
+              console.log(  'fizz');
+            }
+            else if(i % y ===0){
+              console.log('buzz');
+            }
+          
+            else{
+                console.log(i)
+            }
+        }
+    }
+    fizzBuzz(9,6)
+</script>
+</html>
