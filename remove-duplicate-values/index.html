@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Duplicate Values in an array</title>
+</head>
+<body>
+    Remove Duplicate Values in an array
+</body>
+<script>
+    let arr1 = [1,7,8,2, 3, 4, 4, 5, 2]
+    uniqueArr = []
+//    let newArray = new Set(arr1)
+//     console.log(newArray)
+const duplicateValues = () =>{
+    for(let i=0;i<arr1.length;i++){
+        if(!uniqueArr.includes(arr1[i])){
+            uniqueArr.push(arr1[i])
+        }
+       
+    }
+    for (let i = 0; i < uniqueArr.length - 1; i++) {
+        for (let j = 0; j < uniqueArr.length - i - 1; j++) {
+            if (uniqueArr[j] > uniqueArr[j + 1]) {
+                let temp = uniqueArr[j];
+                uniqueArr[j] = uniqueArr[j + 1];
+                uniqueArr[j + 1] = temp;
+            }
+        }
+    }
+    return console.log(uniqueArr);
+}
+duplicateValues()
+
+</script>
+</html>
