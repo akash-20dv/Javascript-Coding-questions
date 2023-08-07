@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pascal's Triangle</h1>
+    <div id="triangle">
+
+    </div>
+</body>
+<script>
+    function generatePascalsTriangle(n) {
+  if (n <= 0) {
+    return [];
+  }
+
+  const result = [[1]]; // Initialize with the first row [1]
+
+  for (let i = 1; i < n; i++) {
+    const prevRow = result[i - 1];
+    const currentRow = [1]; // Each row starts with 1
+
+    for (let j = 1; j < i; j++) {
+      // Calculate the value based on the two values above it
+      currentRow.push(prevRow[j - 1] + prevRow[j]);
+    }
+    currentRow.push(1); // Each row ends with 1
+    result.push(currentRow);
+  }
+  return result;
+}
+// Example usage:
+const n = 10;
+const pascalsTriangle = generatePascalsTriangle(n);
+console.log(pascalsTriangle);
+
+</script>
+</html>
