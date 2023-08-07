@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array sort method</title>
+</head>
+<body>
+    <main>
+      <h1> Array sort Method  </h1>
+        <div id="method1">
+            we will use inbuilt sort method here for the array = [32,22,1,4,55,2,55] 
+
+        </div>
+        <br>
+        <div id="method2">
+            we will use loops here for the array sorting of = [32,22,1,4,55,2,55] 
+
+        </div>
+    </main>
+</body>
+<script>
+    let arr = [32,22,1,4,55,2,55]
+    const sortedArray = arr.sort((a,b)=>a-b)
+    document.getElementById('method1').innerText = ` "we will use inbuilt sort method here for the array = [32,22,1,4,55,2,55] we will do it by this method " ,   const sortedArray = arr.sort((a,b)=>a-b) and the output will be ${sortedArray}`
+
+    // second method
+    function newSortFunction (){
+        for (let i = 0 ; i < arr.length-1;i++){
+            if (arr[i] > arr[i+1]){
+                let temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp ;
+            }
+        }
+        console.log(arr)
+    }
+    // second method
+    document.getElementById('method2').innerHTML = `<h2>
+            ${newSortFunction} where the output is : ${arr}}
+        </h2>`
+    // newSortFunction ()
+</script>
+</html>
