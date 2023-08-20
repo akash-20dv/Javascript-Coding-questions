@@ -20,31 +20,4 @@ Certainly! Here are some JavaScript practice questions where you can implement l
 
 12. FizzBuzz Custom: Write a function that prints the numbers from 1 to `n`, but for multiples of `num1`, print "Fizz," and for multiples of `num2`, print "Buzz." For numbers that are multiples of both `num1` and `num2`, print "FizzBuzz."
 
-These questions will help you practice implementing logic in JavaScript and improve your problem-solving skills. Happy coding!
-Absolutely! Here are some additional JavaScript practice questions that involve implementing logic and problem-solving:
-
-1. Anagram Checker: Write a function that checks if two given strings are anagrams of each other.
-
-2. Array Sum and Average: Implement a function that calculates the sum and average of the elements in an array of numbers.
-
-3. Missing Number: Given an array containing `n` distinct numbers taken from 0, 1, 2, ..., n, write a function to find the missing number in the sequence.
-
-4. Palindrome Number Checker: Create a function that checks if a given number is a palindrome (reads the same backward as forward).
-
-5. Find the Second Largest Number: Write a function that finds the second largest number in an array of integers.
-
-6. Reverse Integer: Implement a function that reverses the digits of a given integer.
-
-7. FizzBuzz Advanced: Write a function that prints the numbers from 1 to `n`, but for multiples of `num1`, print "Fizz," for multiples of `num2`, print "Buzz," and for multiples of both `num1` and `num2`, print "FizzBuzz."
-
-8. Count Duplicates in an Array: Create a function that counts the number of duplicate elements in an array.
-
-9. Find the Missing Angle: Given two angles of a triangle (in degrees), write a function that calculates and returns the value of the missing angle.
-
-10. Longest Word in a Sentence: Implement a function that finds and returns the longest word in a given sentence.
-
-11. Binary to Decimal Conversion: Write a function that converts a binary number to its decimal equivalent.
-
-12. Check Leap Year: Create a function that checks if a given year is a leap year.
-
 These practice questions will help you reinforce your JavaScript skills and challenge you to think critically when implementing different algorithms and logic. Happy coding and enjoy the learning process!
