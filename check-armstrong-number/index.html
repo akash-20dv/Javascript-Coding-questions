@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if a number if a number is an armstrong number.</title>
+</head>
+<body>
+    <h2>check for an armstrong number</h2>
+    <p>Check in your console for result.</p>
+
+</body>
+<script>
+    // suppose we have 153 , then the sum of their cube should be equal to the value i.e 153
+    // 153 = 1*1*1 + 5*5*5 + 3*3*3
+   function IsArmstrong(number){
+   
+    let digits = number.toString()
+    .split("")
+    .map((element)=>{ return parseInt(element)})
+    let sum = 0;
+    const power = digits.length;
+    for (const element of digits){
+        sum+= Math.pow(element,power)
+    }
+    return sum===number;
+   }
+   function FirstTwentyArmstrongNumbers(n){
+    let armstrongNumbers = []
+    let number = 0;
+    while (armstrongNumbers.length<n){
+        if(IsArmstrong(number)){
+            armstrongNumbers.push(number)
+        }
+        number++
+    }
+    console.log(armstrongNumbers.join(" , "))
+   }
+   FirstTwentyArmstrongNumbers(20) //it will print the firstTwenty Armstrong number
+</script>
+</html>
