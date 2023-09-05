@@ -19,5 +19,5 @@ Certainly! Here are some JavaScript practice questions where you can implement l
 11. Count Vowels and Consonants: Write a function that counts the number of vowels and consonants in a given string.
 
 12. FizzBuzz Custom: Write a function that prints the numbers from 1 to `n`, but for multiples of `num1`, print "Fizz," and for multiples of `num2`, print "Buzz." For numbers that are multiples of both `num1` and `num2`, print "FizzBuzz."
-
+13. Find the maximum number in an array.
 These practice questions will help you reinforce your JavaScript skills and challenge you to think critically when implementing different algorithms and logic. Happy coding and enjoy the learning process!
