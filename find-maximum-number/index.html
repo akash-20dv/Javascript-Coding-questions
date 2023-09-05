@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the maximum Number in an array</title>
+    <style>
+        code{
+            width: clamp( 65% , 40vw, 77vw  );
+            display: block;
+            padding: 32px;
+            background: #363636d9;
+            color: #fdf0ff;
+            font-size: 23px;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1> Hello World, <br> We will be finding the maximum number in an array in console. </h1>
+    <code id="demo">
+    </code>
+</body>
+<script>
+    
+// 2. Find the maximum number in an array.
+let arr = [121,23113,43434,423212,222121]
+
+function Max_num(arr){
+  
+  if(arr.length===0){
+    return ;
+  }
+   let max = arr[0];
+   for(let= i=0;i<arr.length;i++){
+     if(arr[i]>max){
+       max = arr[i]
+     }
+   }
+   return max;
+}
+console.log(Max_num)
+console.log(Max_num(arr));
+document.getElementById('demo').innerHTML = Max_num
+</script>
+</html>
